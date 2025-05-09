@@ -10,6 +10,7 @@ const components = {
   grid: Grid,
   teaser: Teaser,
   page: Page,
+  tease: Tease,
 };
 
 storyblokInit({
