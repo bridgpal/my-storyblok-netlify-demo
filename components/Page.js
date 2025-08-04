@@ -1,11 +1,17 @@
 import { storyblokEditable, StoryblokComponent } from "@storyblok/react";
+import Header from "./Header";
+import Footer from "./Footer";
 
 const Page = ({ blok }) => (
-  <main className="text-center mt-4" {...storyblokEditable(blok)}>
-    {blok.body.map((nestedBlok) => (
-      <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
-    ))}
-  </main>
+  <div {...storyblokEditable(blok)}>
+    <Header />
+    <main>
+      {blok.body.map((nestedBlok) => (
+        <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
+      ))}
+    </main>
+    <Footer />
+  </div>
 );
 
 export default Page;

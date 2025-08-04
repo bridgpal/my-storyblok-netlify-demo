@@ -5,6 +5,10 @@ import Grid from "../components/Grid";
 import Page from "../components/Page";
 import Teaser from "../components/Teaser";
 import Tease from "../components/Tease";
+import Hero from "../components/Hero";
+import Features from "../components/Features";
+import Testimonials from "../components/Testimonials";
+import CTA from "../components/CTA";
 
 const components = {
   feature: Feature,
@@ -13,6 +17,10 @@ const components = {
   teaser_copy: Teaser,
   page: Page,
   tease: Tease,
+  hero: Hero,
+  features: Features,
+  testimonials: Testimonials,
+  cta: CTA,
 };
 
 storyblokInit({

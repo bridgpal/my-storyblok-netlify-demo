@@ -13,7 +13,8 @@ export default function Home({ story }) {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Transform Your Business Today | YourBrand</title>
+        <meta name="description" content="Discover the power of innovation with our cutting-edge solutions designed to accelerate your growth and success." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <StoryblokComponent blok={story.content} />
