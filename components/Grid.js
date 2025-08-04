@@ -2,11 +2,23 @@ import { storyblokEditable, StoryblokComponent } from "@storyblok/react";
 
 const Grid = ({ blok }) => {
   return (
-    <div className="grid grid-cols-3" {...storyblokEditable(blok)}>
-      {blok.columns.map((nestedBlok) => (
-        <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
-      ))}
-    </div>
+    <section className="py-20 bg-gray-50" {...storyblokEditable(blok)}>
+      <div className="container mx-auto px-6">
+        {blok.headline && (
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">{blok.headline}</h2>
+            {blok.subheadline && (
+              <p className="text-xl text-gray-600 max-w-2xl mx-auto">{blok.subheadline}</p>
+            )}
+          </div>
+        )}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {blok.columns.map((nestedBlok) => (
+            <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
+          ))}
+        </div>
+      </div>
+    </section>
   );
 };
 
