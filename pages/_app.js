@@ -10,6 +10,7 @@ const components = {
   feature: Feature,
   grid: Grid,
   teaser: Teaser,
+  teaser_copy: Teaser,
   page: Page,
   tease: Tease,
 };
