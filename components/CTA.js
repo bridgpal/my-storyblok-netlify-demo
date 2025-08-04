@@ -2,7 +2,7 @@ import { storyblokEditable } from "@storyblok/react";
 
 const CTA = ({ blok }) => {
   return (
-    <section className="py-24 bg-blue-600 text-white" {...storyblokEditable(blok)}>
+    <section className="py-24 bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-700 text-white" {...storyblokEditable(blok)}>
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-5xl md:text-6xl font-bold mb-8">
           {blok.headline || "Ready to Get Started?"}
@@ -11,10 +11,10 @@ const CTA = ({ blok }) => {
           {blok.subheadline || "Join thousands of businesses already using our platform to accelerate their growth and success."}
         </p>
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
-          <button className="bg-white text-blue-600 px-10 py-4 font-bold text-lg hover:bg-gray-100 transition-colors">
+          <button className="bg-white text-blue-600 px-10 py-4 font-bold text-lg rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
             {blok.primary_button || "Start Free Trial"}
           </button>
-          <button className="border-2 border-white text-white px-10 py-4 font-bold text-lg hover:bg-white hover:text-blue-600 transition-colors">
+          <button className="border-2 border-white text-white px-10 py-4 font-bold text-lg rounded-lg hover:bg-white hover:text-blue-600 transition-all duration-300">
             {blok.secondary_button || "Contact Sales"}
           </button>
         </div>

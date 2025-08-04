@@ -2,13 +2,13 @@ import { storyblokEditable, StoryblokComponent } from "@storyblok/react";
 
 const Testimonials = ({ blok }) => {
   return (
-    <section className="py-24 bg-gray-900" {...storyblokEditable(blok)}>
+    <section className="py-24 bg-white" {...storyblokEditable(blok)}>
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
-          <h2 className="text-5xl font-bold text-white mb-6">
+          <h2 className="text-5xl font-bold text-gray-900 mb-6">
             {blok.headline || "What Our Customers Say"}
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             {blok.subheadline || "Join thousands of satisfied customers who have transformed their business with our solutions."}
           </p>
         </div>
@@ -17,7 +17,7 @@ const Testimonials = ({ blok }) => {
             <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
           )) || (
             <>
-              <div className="bg-gray-800 p-8 border border-gray-700">
+              <div className="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="flex items-center mb-6">
                   {[...Array(5)].map((_, i) => (
                     <svg key={i} className="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
@@ -25,18 +25,18 @@ const Testimonials = ({ blok }) => {
                     </svg>
                   ))}
                 </div>
-                <p className="text-gray-300 mb-8 text-lg leading-relaxed">"This solution completely transformed how we operate. The results exceeded our expectations and the support team is incredible."</p>
+                <p className="text-gray-700 mb-8 text-lg leading-relaxed">"This solution completely transformed how we operate. The results exceeded our expectations and the support team is incredible."</p>
                 <div className="flex items-center">
-                  <div className="w-14 h-14 bg-blue-600 flex items-center justify-center text-white font-bold text-lg mr-4">
+                  <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
                     JS
                   </div>
                   <div>
-                    <p className="font-bold text-white text-lg">John Smith</p>
-                    <p className="text-gray-400">CEO, TechCorp</p>
+                    <p className="font-bold text-gray-900 text-lg">John Smith</p>
+                    <p className="text-gray-600">CEO, TechCorp</p>
                   </div>
                 </div>
               </div>
-              <div className="bg-gray-800 p-8 border border-gray-700">
+              <div className="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="flex items-center mb-6">
                   {[...Array(5)].map((_, i) => (
                     <svg key={i} className="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
@@ -44,18 +44,18 @@ const Testimonials = ({ blok }) => {
                     </svg>
                   ))}
                 </div>
-                <p className="text-gray-300 mb-8 text-lg leading-relaxed">"Amazing product with outstanding customer service. We saw immediate improvements in our workflow and productivity."</p>
+                <p className="text-gray-700 mb-8 text-lg leading-relaxed">"Amazing product with outstanding customer service. We saw immediate improvements in our workflow and productivity."</p>
                 <div className="flex items-center">
-                  <div className="w-14 h-14 bg-green-600 flex items-center justify-center text-white font-bold text-lg mr-4">
+                  <div className="w-14 h-14 bg-gradient-to-r from-green-500 to-teal-600 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
                     MJ
                   </div>
                   <div>
-                    <p className="font-bold text-white text-lg">Maria Johnson</p>
-                    <p className="text-gray-400">Director, InnovateLab</p>
+                    <p className="font-bold text-gray-900 text-lg">Maria Johnson</p>
+                    <p className="text-gray-600">Director, InnovateLab</p>
                   </div>
                 </div>
               </div>
-              <div className="bg-gray-800 p-8 border border-gray-700">
+              <div className="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="flex items-center mb-6">
                   {[...Array(5)].map((_, i) => (
                     <svg key={i} className="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
@@ -63,14 +63,14 @@ const Testimonials = ({ blok }) => {
                     </svg>
                   ))}
                 </div>
-                <p className="text-gray-300 mb-8 text-lg leading-relaxed">"The best investment we've made for our business. Simple to use, powerful features, and excellent ROI."</p>
+                <p className="text-gray-700 mb-8 text-lg leading-relaxed">"The best investment we've made for our business. Simple to use, powerful features, and excellent ROI."</p>
                 <div className="flex items-center">
-                  <div className="w-14 h-14 bg-purple-600 flex items-center justify-center text-white font-bold text-lg mr-4">
+                  <div className="w-14 h-14 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
                     DW
                   </div>
                   <div>
-                    <p className="font-bold text-white text-lg">David Wilson</p>
-                    <p className="text-gray-400">Founder, StartupXYZ</p>
+                    <p className="font-bold text-gray-900 text-lg">David Wilson</p>
+                    <p className="text-gray-600">Founder, StartupXYZ</p>
                   </div>
                 </div>
               </div>

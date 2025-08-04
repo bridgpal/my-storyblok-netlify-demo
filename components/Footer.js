@@ -1,10 +1,10 @@
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-16">
+    <footer className="bg-gray-900 text-white py-16">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-12">
           <div className="col-span-1 md:col-span-2">
-            <h3 className="text-3xl font-bold mb-6">YourBrand</h3>
+            <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">YourBrand</h3>
             <p className="text-gray-400 mb-8 max-w-md text-lg leading-relaxed">
               Empowering businesses worldwide with innovative solutions that drive growth, efficiency, and success.
             </p>
